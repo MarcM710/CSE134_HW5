@@ -31,6 +31,7 @@
         <noscript class="error">Error: JavaScript required for page timing measurement </noscript>
       </section>
     </header>
+    <hr>
     <nav>
       <ul>
         <li><a href="about.html">About Me</a></li>
@@ -44,13 +45,17 @@
         <h2>Hey, I'm Marc Mendoza</h2>
       </section>
       <br>
-      <canvas id="rectangle"> </canvas>
-      <script>
-      var c = document.getElementById("rectangle");
-      var ctx = c.getContext("2d");
-      ctx.fillStyle = "#FF00FF";
-      ctx.fillRect(0, 0, 1000, 100);
-      </script>
+      <section id = "Rectangle">
+        <h3> Here's a rectangle drawn using the <i> canvas </i> tag</h3>
+        <canvas id="rectangle"> </canvas>
+        <script>
+        var c = document.getElementById("rectangle");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FF00FF";
+        ctx.fillRect(0, 0, 1500, 100);
+        </script>
+      </section>
+      
       <br>
       <section class="video">
         <h2>Video</h2>
@@ -62,7 +67,7 @@
      
     </main>
     <footer>
-      <p> Website made with love by Marc Mendoza </p>
+      <p> Website made with love by <i> Marc Mendoza</i></p>
     </footer>
   </body>
 </html>
