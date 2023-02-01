@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1> Experiment's Page</h1>
+        <hr>
+    </head>
+    <body>
+        <main>
+            <h3> Page is specifically made to utilize the rest of the required tags for HW2</h3>
+            <hr>
+            <br>
+            <section id = "fieldset">
+                <form>
+                    <fieldset>
+                     <legend>Personal Information:</legend>
+                     <label for="fname">First Initial:</label>
+                     <input type="text" id="fInitial" name="fInitial"><br><br>
+                     <label for="lname">Last Name:</label>
+                     <input type="text" id="lname" name="lname"><br><br>
+                     <label for="email">Email: </label>
+                     <input type="email" id="email" name="email"><br><br>
+                     <label for="ssn">SSN:</label>
+                     <input type="ssn" id="ssn" name="ssn"><br><br>
+                     <label for="account #">Account #:</label>
+                     <input type="account #" id="account #" name="account #"><br><br>
+                     <label for="birthday">Birthday:</label>
+                     <input type="date" id="birthday" name="birthday"><br><br>
+                     <input type="submit" value="Submit">
+                    </fieldset>
+                   </form>
+            </section>
+            <br>
+            <hr>
+            <section id = "textarea">
+                <form>
+                    <p><label for="site-review">Review of my Personal Website:</label></p>
+                    <textarea id="site-review" name="site-review" rows="4" cols="50"> Please enter a review of my personal website </textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <br>
+            <hr>
+            <section id = "datalist">
+                <form>
+                    <label for="browser">Choose your browser from the list:</label>
+                    <input list="browsers" name="browser" id="browser">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
