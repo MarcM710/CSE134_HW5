@@ -1,125 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <h1> Experiment's Page</h1>
-        <hr>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-          </nav>
-          <hr>
-        <main>
-            <h3> Page is specifically made to utilize the rest of the required tags for HW2</h3>
-            <hr>
-            <br>
-            <section id = "fieldset">
-                <form>
-                    <fieldset>
-                     <legend>Personal Information:</legend>
-                     <label for="fname">First Initial:</label>
-                     <input type="text" id="fInitial" name="fInitial"><br><br>
-                     <label for="lname">Last Name:</label>
-                     <input type="text" id="lname" name="lname"><br><br>
-                     <label for="email">Email: </label>
-                     <input type="email" id="email" name="email"><br><br>
-                     <label for="ssn">SSN:</label>
-                     <input type="ssn" id="ssn" name="ssn" required><br><br>
-                     <label for="phone">Phone :</label>
-                     <input type="number" min=0 max=9999999999 id="phone" name="phone" value="1234567890"><br><br>
-                     <label for="birthday">Birthday:</label>
-                     <input type="date" id="birthday" name="birthday"><br><br>
-                     <input type="submit" value="Submit">
-                    </fieldset>
-                   </form>
-            </section>
-            <br>
-            <hr>
-            <section id = "textarea">
-                <form>
-                    <p><label for="site-review">Review of my Personal Website:</label></p>
-                    <textarea id="site-review" name="site-review" rows="4" cols="50"> Please enter a review of my personal website </textarea>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-            <br>
-            <hr>
-            <section id = "datalist">
-                <form>
-                    <label for="bank">Choose the bank you use:</label>
-                    <input list="banks" name="bank" id="bank">
-                    <datalist id="banks">
-                        <option value="Chase">
-                        <option value="Bank of America">
-                        <option value="Wells Fago">
-                    </datalist>
-                    <input type="submit">
-                </form>
-            </section>
-            <br>
-            <hr>
-            <section id = "button">
-                <button type="button"> Random button </button>
-            </section>
-            <br>
-            <hr>
-            <section id = "fav car brand">
-                <form>
-                    <label for="cars">Choose your favorite car brand:</label>
-                    <select name="cars" id="cars">
-                      <optgroup label="Japanese Cars">
-                        <option value="Nissan">Nissan</option>
-                        <option value="Toyota">Toyota</option>
-                      </optgroup>
-                      <optgroup label="American Cars">
-                        <option value="Ford">Ford</option>
-                        <option value="General Motors">GM</option>
-                      </optgroup>
-                      <optgroup label="German Cars">
-                        <option value="BMW">BMW</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Mercedes">Mercedes</option>
-                      </optgroup>
-                    </select>
-                    <input type="submit" value="Submit">
-                  </form>
-            </section>
-            <br>
-            <hr>
-            <section id="template">
-                <button onclick="showContent()">Show hidden content</button>
-                <template>
-                    <h2>Kirby</h2>
-                    <img src="images/kirby.jpg" width="214" height="204">
-                </template>
-                <script>
-                    function showContent() {
-                        // only way to use template tag is with javascript 
-                        let temp = document.getElementsByTagName("template")[0];
-                        let clone = temp.content.cloneNode(true);
-                        document.body.appendChild(clone);
-                    }
-                </script>
-                 <!-- <script>
-                    function showContent() {
-                        const init_len = document.getElementsByClassName("kirby").length || 1;
-                        for (let i=0; i<init_len; i++) {
-                            var temp = document.getElementsByTagName("template")[0];
-                            var clon = temp.content.cloneNode(true);
-                            clon.className = "kirby";
-                            document.body.appendChild(clon);
-                        }
-                    }
-                </script> -->
-            </section>
-            <br>
-            <hr>
-        </main>
-    </body>
+   <head>
+      <h1> Experiment's Page</h1>
+      <hr>
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="blog.html">Blog</a></li>
+         </ul>
+      </nav>
+      <hr>
+      <main>
+         <h3> Page is specifically made to utilize the rest of the required tags for HW2</h3>
+         <hr>
+         <br>
+         <section id = "fieldset">
+            <form>
+               <fieldset>
+                  <legend>Personal Information:</legend>
+                  <label for="fname">First Initial:</label>
+                  <input type="text" id="fInitial" name="fInitial"><br><br>
+                  <label for="lname">Last Name:</label>
+                  <input type="text" id="lname" name="lname"><br><br>
+                  <label for="email">Email: </label>
+                  <input type="email" id="email" name="email"><br><br>
+                  <label for="ssn">SSN:</label>
+                  <input type="ssn" id="ssn" name="ssn" required><br><br>
+                  <label for="phone">Phone :</label>
+                  <input type="number" min=0 max=9999999999 id="phone" name="phone" value="1234567890"><br><br>
+                  <label for="birthday">Birthday:</label>
+                  <input type="date" id="birthday" name="birthday"><br><br>
+                  <input type="submit" value="Submit">
+               </fieldset>
+            </form>
+         </section>
+         <br>
+         <hr>
+         <section id = "textarea">
+            <form>
+               <p><label for="site-review">Review of my Personal Website:</label></p>
+               <textarea id="site-review" name="site-review" rows="4" cols="50"> Please enter a review of my personal website </textarea>
+               <br>
+               <input type="submit" value="Submit">
+            </form>
+         </section>
+         <br>
+         <hr>
+         <section id = "datalist">
+            <form>
+               <label for="bank">Choose the bank you use:</label>
+               <input list="banks" name="bank" id="bank">
+               <datalist id="banks">
+                  <option value="Chase">
+                  <option value="Bank of America">
+                  <option value="Wells Fago">
+               </datalist>
+               <input type="submit">
+            </form>
+         </section>
+         <br>
+         <hr>
+         <section id = "button">
+         <button type="button"> Random button </button>
+         </section>
+         <br>
+         <hr>
+         <section id = "fav car brand">
+         <form>
+         <label for="cars">Choose your favorite car brand:</label>
+         <select name="cars" id="cars">
+         <optgroup label="Japanese Cars">
+         <option value="Nissan">Nissan</option>
+         <option value="Toyota">Toyota</option>
+         </optgroup>
+         <optgroup label="American Cars">
+         <option value="Ford">Ford</option>
+         <option value="General Motors">GM</option>
+         </optgroup>
+         <optgroup label="German Cars">
+         <option value="BMW">BMW</option>
+         <option value="Audi">Audi</option>
+         <option value="Mercedes">Mercedes</option>
+         </optgroup>
+         </select>
+         <input type="submit" value="Submit">
+         </form>
+         </section>
+         <br>
+         <hr>
+         <section id="template">
+            <button onclick="showContent()">Show hidden content</button>
+            <template>
+               <h2>Kirby</h2>
+               <img src="images/kirby.jpg" width="214" height="204">
+            </template>
+            <script>
+               function showContent() {
+                   // only way to use template tag is with javascript 
+                   let temp = document.getElementsByTagName("template")[0];
+                   let clone = temp.content.cloneNode(true);
+                   document.body.appendChild(clone);
+               }
+            </script>
+            <!-- <script>
+               function showContent() {
+                   const init_len = document.getElementsByClassName("kirby").length || 1;
+                   for (let i=0; i<init_len; i++) {
+                       var temp = document.getElementsByTagName("template")[0];
+                       var clon = temp.content.cloneNode(true);
+                       clon.className = "kirby";
+                       document.body.appendChild(clon);
+                   }
+               }
+               </script> -->
+         </section>
+         <br>
+         <hr>
+      </main>
+   </body>
 </html>
