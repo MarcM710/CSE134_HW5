@@ -100,6 +100,14 @@
                 </template>
                 <script>
                     function showContent() {
+                        // only way to use template tag is with javascript 
+                        let temp = document.getElementsByTagName("template")[0];
+                        let clone = temp.content.cloneNode(true);
+                        document.body.appendChild(clone);
+                    }
+                </script>
+                 <!-- <script>
+                    function showContent() {
                         const init_len = document.getElementsByClassName("kirby").length || 1;
                         for (let i=0; i<init_len; i++) {
                             var temp = document.getElementsByTagName("template")[0];
@@ -108,8 +116,10 @@
                             document.body.appendChild(clon);
                         }
                     }
-                </script>
+                </script> -->
             </section>
+            <br>
+            <hr>
         </main>
     </body>
 </html>
