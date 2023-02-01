@@ -100,9 +100,10 @@
                 </template>
                 <script>
                     function showContent() {
-                        for (let i=0; i<document.getElementsByTagName("template").length; i++) {
+                        for (let i=0; i<document.getElementsByClassName("kirby").length || 1; i++) {
                             var temp = document.getElementsByTagName("template")[0];
                             var clon = temp.content.cloneNode(true);
+                            clon.setAttribute('class', 'kirby')
                             document.body.appendChild(clon);
                         }
                     }
