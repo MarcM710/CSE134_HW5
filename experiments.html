@@ -29,9 +29,9 @@
                      <label for="email">Email: </label>
                      <input type="email" id="email" name="email"><br><br>
                      <label for="ssn">SSN:</label>
-                     <input type="ssn" id="ssn" name="ssn"><br><br>
-                     <label for="account #">Account #:</label>
-                     <input type="account #" id="account #" name="account #"><br><br>
+                     <input type="ssn" id="ssn" name="ssn" required><br><br>
+                     <label for="phone">Phone :</label>
+                     <input type="number" min=0 max=9999999999 id="phone" name="phone" value="1234567890"><br><br>
                      <label for="birthday">Birthday:</label>
                      <input type="date" id="birthday" name="birthday"><br><br>
                      <input type="submit" value="Submit">
@@ -52,17 +52,59 @@
             <hr>
             <section id = "datalist">
                 <form>
-                    <label for="browser">Choose your browser from the list:</label>
-                    <input list="browsers" name="browser" id="browser">
-                    <datalist id="browsers">
-                        <option value="Edge">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
+                    <label for="bank">Choose the bank you use:</label>
+                    <input list="banks" name="bank" id="bank">
+                    <datalist id="banks">
+                        <option value="Chase">
+                        <option value="Bank of America">
+                        <option value="Wells Fago">
                     </datalist>
                     <input type="submit">
                 </form>
+            </section>
+            <br>
+            <hr>
+            <section id = "button">
+                <button type="button"> Random button </button>
+            </section>
+            <br>
+            <hr>
+            <section id = "fav car brand">
+                <form>
+                    <label for="cars">Choose your favorite car brand:</label>
+                    <select name="cars" id="cars">
+                      <optgroup label="Japanese Cars">
+                        <option value="Nissan">Nissan</option>
+                        <option value="Toyota">Toyota</option>
+                      </optgroup>
+                      <optgroup label="American Cars">
+                        <option value="Ford">Ford</option>
+                        <option value="General Motors">GM</option>
+                      </optgroup>
+                      <optgroup label="German Cars">
+                        <option value="BMW">BMW</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Mercedes">Mercedes</option>
+                      </optgroup>
+                    </select>
+                    <input type="submit" value="Submit">
+                  </form>
+            </section>
+            <br>
+            <hr>
+            <section id="template">
+                <button onclick="showContent()">Show hidden content</button>
+                <template>
+                    <h2>Kirby</h2>
+                    <img src="images/kirby.jpg" width="214" height="204">
+                </template>
+                <script>
+                    function showContent() {
+                    var temp = document.getElementsByTagName("template")[0];
+                    var clon = temp.content.cloneNode(true);
+                    document.body.appendChild(clon);
+                    }
+                </script>
             </section>
         </main>
     </body>
