@@ -100,7 +100,8 @@
                 </template>
                 <script>
                     function showContent() {
-                        for (let i=0; i<document.getElementsByClassName("kirby").length || 1; i++) {
+                        const init_len = document.getElementsByClassName("kirby").length || 1;
+                        for (let i=0; i<init_len; i++) {
                             var temp = document.getElementsByTagName("template")[0];
                             var clon = temp.content.cloneNode(true);
                             clon.className = "kirby";
