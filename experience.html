@@ -6,28 +6,29 @@
       <meta name = "keywords" content="HTML, CSS, JavaScript" />
       <meta name = "author" content="Marc Mendoza"/>
       <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Experience Page</title>
-      <link href="images/favicon.ico" rel="icon" />
+      <title>Experience</title>
+      <link href="images/icons/favicon.ico" rel="icon" />
+      <link href="styles/main.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@500&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css" rel="stylesheet">
    </head>
    <body>
+      <span style="color:white; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
       <header>
          <h1>Experience</h1>
       </header>
       <hr>
-      <nav>
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="experiments.html">Experiments</a></li>
-         </ul>
-      </nav>
+      <div id="mySideBar" class="side_bar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="index.html">Home</a>
+         <a href="about.html">About me</a>
+         <a class="active" href="experience.html">Experience</a>
+         <a href="blog.html">Blog</a>
+      </div>
       <hr>
       <main>
-         <audio autoplay loop style="display: none;">
-            <source src="audio/rick.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-         </audio>
          <ol>
             <li><b>Project A</b></li>
             <ul>
@@ -56,5 +57,7 @@
          <source media="(min-width:465px)" srcset="images/comp.jpg">
          <img src="images/comp.jpg" alt="Computer on fire" style="width:auto;">
       </picture>
+      <!-- Script used for responsive nav bar-->
+      <script src="navBar.js"></script>
    </body>
 </html>

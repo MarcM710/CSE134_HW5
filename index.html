@@ -2,74 +2,35 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8"/>
-      <meta name = "description" content="Personal Website for Marc Mendoza" />
-      <meta name = "keywords" content="HTML, CSS, JavaScript" />
-      <meta name = "author" content="Marc Mendoza"/>
-      <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Marc Mendoza's Personal Website</title>
-      <link href="images/favicon.ico" rel="icon" />
-      <script>
-         window.addEventListener('load', function () {
-           let time = window.performance.timing,
-             complete = time.domComplete - time.domLoading;
-           document.getElementById('page-load-info').innerHTML = `<strong>Page Loaded in ${parseInt(complete)} ms
-            on ${new Date().toLocaleString("en-US")}</strong>`;
-         });
-      </script>
+      <meta name="description" content="Personal Website for Marc Mendoza" />
+      <meta name="keywords" content="HTML, CSS, JavaScript" />
+      <meta name="author" content="Marc Mendoza"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Marc Mendoza</title>
+      <link href="images/icons/favicon.ico" rel="icon" />
+      <link href="styles/main.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@500&display=swap" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css" rel="stylesheet">
    </head>
    <body>
-      <header>
-         <h1>Marc Mendoza's Personal Website</h1>
-         <h4>Page Load Time</h4>
-         <section id="page-load-component">
-            <div id="load-info" style="display: none;">
-               <output id="page-load-info">Measuring...</output>
-            </div>
-            <script>
-               document.getElementById('load-info').style.display = 'block';
-            </script>
-            <noscript class="error">Error: JavaScript required for page timing measurement </noscript>
-         </section>
-      </header>
-      <hr>
-      <nav>
-         <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="experiments.html">Experiments</a></li>
-         </ul>
-      </nav>
-      <main>
-         <section id="Homepage">
-            <h2>Hey, I'm Marc Mendoza</h2>
-         </section>
-         <br>
-         <section id = "Rectangles">
-            <h3> Here's a rectangle drawn using the <i> canvas </i> tag</h3>
-            <canvas id="rectangle"> </canvas>
-            <script>
-               var c = document.getElementById("rectangle");
-               var ctx = c.getContext("2d");
-               ctx.fillStyle = "#FF00FF";
-               ctx.fillRect(0, 0, 1500, 100);
-            </script>
-            <h3>Here's a rectangle drawn using the <i>svg</i> tag</h3>
-            <svg width="400" height="100">
-               <rect width="400" height="100" style="fill:rgb(255,0,255);stroke-width:10;stroke:rgb(255, 255, 255)" />
-            </svg>
-         </section>
-         <br>
-         <section class="video">
-            <h2>Video</h2>
-            <video controls height="393" width="700">
-               <source src="videos/sd.mp4" type="video/mp4" />
-               <div class="error">Error: Your browser does not support the video tag.</div>
-            </video>
-         </section>
-      </main>
-      <footer>
-         <p> Website made with love by <i> Marc Mendoza</i></p>
-      </footer>
+      <div class="home-image">
+         <span style="color:white; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+         <div class="home-text">
+            <h1 style="font-size: 55px">Marc Mendoza</h1>
+            <h2 style="font-size: 20px">Computer Science Student</h2>
+            <h2 style="font-size: 20px">Software Engineer</h2>
+         </div>
+      </div>
+      <div id="mySideBar" class="side_bar">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a class="active" href="index.html">Home</a>
+         <a href="about.html">About me</a>
+         <a href="experience.html">Experience</a>
+         <a href="blog.html">Blog</a>
+      </div>
+   <!-- Script used for responsive nav bar-->
+      <script src="navBar.js"></script>
    </body>
 </html>
