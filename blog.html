@@ -2,59 +2,84 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8"/>
-      <meta name = "description" content="Personal Website for Marc Mendoza" />
-      <meta name = "keywords" content="HTML, CSS, JavaScript" />
-      <meta name = "author" content="Marc Mendoza"/>
-      <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="description" content="Personal Website for Marc Mendoza" />
+      <meta name="keywords" content="HTML, CSS, JavaScript" />
+      <meta name="author" content="Marc Mendoza"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Blog</title>
       <link href="images/icons/favicon.ico" rel="icon" />
       <link href="styles/main.css" rel="stylesheet" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@500&display=swap" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
-   <body>
+   <body class="blog-body">
       <span style="color:white; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
       <header>
-         <h1>My Blog</h1>
+         <h1 class="blog-text">Not-so-safe place to rant</h1>
       </header>
-      <hr>
+      <section class="blog">
+         <section class="blog-left">
+            <section class="blog-post">
+               <h2>Kirby Blog - Jan 21, 2022</h2>
+               <p>I love kirby</p>
+               <div class="blog-img-one" style="height:300px;"> </div>
+            </section>
+            <section class="blog-post">
+               <h2>Cow Post - Feb 15, 2023</h2>
+               <p>Today I made a cow</p>
+               <figure>
+                  <pre role="img" aria-label="ASCII COW">
+                    _________________________________________
+                    &lt; I love making websites out of raw HTML. &gt;
+                     -----------------------------------------
+                            \   ^__^
+                             \  (oo)\_______
+                                (__)\       )\/\
+                                    ||----w |
+                                    ||     ||
+                     A cow saying, "I love making websites out of raw HTML".
+                     The cow is created using<code> 'figure', 'pre' and 'figcaption'</code> tags
+                  </pre>
+                  </figcaption>
+               </figure>
+            </section>
+         </section>
+         <section class="blog-right">
+            <section class="blog-post">
+               <h3>Post your own blog</h3>
+               <form action="/action_page.php">
+                  <label for="full-name">Name:</label><br>
+                  <input type="text" id="full-name" name="full-name"><br /><br />
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email"><br /> <br />
+                  <textarea id="post" name="post" rows="4" cols="50"> Write your own blog here </textarea> <br /><br />
+                  <label for="file">Select a file:</label>
+                  <input type="file" id="file" name="file"> <br /><br />
+                  <input type="submit" value="Submit">
+                  <input type="reset">
+               </form>
+            </section>
+            <section class="blog-post">
+               <h3>Popular Blogs</h3>
+               <a href="#blog-one"> #1 Blog</a>  &emsp;
+               <a href="#blog-two"> #2 Blog</a>  &emsp;
+               <a href="#blog-three"> #3 Blog </a>  &emsp;
+            </section>
+         </section>
+      </section>
       <div id="mySideBar" class="side_bar">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <a href="index.html">Home</a>
-         <a href="about.html">About me</a>
+         <a href="about.html">About Me</a>
          <a href="experience.html">Experience</a>
          <a class="active" href="blog.html">Blog</a>
       </div>
-      <hr>
-      <main>
-         <h2>Post 1</h2>
-         <p>Today I made a cow</p>
-         <figure>
-            <pre role="img" aria-label="ASCII COW">
-              _________________________________________ 
-              &lt; I love making websites out of raw HTML. &gt;
-               ----------------------------------------- 
-                      \   ^__^
-                       \  (oo)\_______
-                          (__)\       )\/\
-                              ||----w |
-                              ||     ||
-               A cow saying, "I love making websites out of raw HTML". 
-               The cow is created using<code> 'figure', 'pre' and 'figcaption'</code> tags
-            </figcaption>
-         </figure>
-         <hr>
-         <h2>Post 2</h2>
-         <p>I love kirby</p>
-         <img src="images/kirby.jpg" alt="Kirby" width="800" height="600">
-         <hr>
-      </main>
       <footer>
-         <p>Blog Author: Marc Mendoza the first - 2023</p>
+         <p>Blog Moderator: Marc Mendoza the 1st</p>
       </footer>
       <!-- Script used for responsive nav bar-->
-      <script src="navBar.js"></script>
+      <script src="scripts/navBar.js"></script>
    </body>
 </html>

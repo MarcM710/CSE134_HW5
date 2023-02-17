@@ -16,18 +16,19 @@
    </head>
    <body class="about-body">
       <span style="color:white; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+      <h1 class="about-text">About Me</h1>
       <div id="mySideBar" class="side_bar">
          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          <a href="index.html">Home</a>
-         <a class="active" href="about.html">About me</a>
+         <a class="active" href="about.html">About Me</a>
          <a href="experience.html">Experience</a>
          <a href="blog.html">Blog</a>
       </div>
       <main class="about-main">
-         <div class="about-grid-container">
-            <div class="about-left-container">
+         <div class="grid-container">
+            <div class="left-container">
                <details>
-                  <summary style="font-size: x-large"> <b> Bio </b> </summary>
+                  <summary style="font-size: 2vh"> <b> Bio </b> </summary>
                   <p>
                      Hey there, my name Marc Mendoza. I am a 4th year Computer Science major at UC San Diego
                      who is currently working at a startup Fintech company called Ava Finance. I am currently working
@@ -47,9 +48,9 @@
                      into real estate and the stock market for the security of myself and my family, both in the present and future.
                   </p>
                </details>
-               <hr>
+               <hr />
                <details>
-                  <summary style="font-size: x-large"> <b> Technical Skills </b> </summary>
+                  <summary style="font-size: 2vh"> <b> Technical Skills </b> </summary>
                   <ul>
                      <li>Programming Languages</li>
                      <ul>
@@ -73,9 +74,9 @@
                      </ul>
                   </ul>
                </details>
-               <hr>
+               <hr />
                <details>
-                  <summary style="font-size: x-large"> <b> Soft Skills </b> </summary>
+                  <summary style="font-size: 2vh"> <b> Soft Skills </b> </summary>
                   <ul>
                      <li>Adaptable</li>
                      <li>Time Management</li>
@@ -85,15 +86,15 @@
                      <li>Self-Motivated</li>
                   </ul>
                </details>
-               <hr>
+               <hr />
                <details>
-                  <summary style="font-size: x-large"> <b> Hobbies </b> </summary>
-                  <p> On my free time I enjoy powerlifting and working on project cars</p>
-                  <section id = "table">
+                  <summary style="font-size: 2vh"> <b> Hobbies </b> </summary>
+                  <p> On my free time I enjoy powerlifting</p>
+                  <section id = "pr_table">
                      <caption>Powerlifting personal records by year</caption>
                      <table>
                         <colgroup>
-                           <col span="1" style="background-color:yellow">
+                           <col span="1" style="background-color:red">
                            <col span="3" style="background-color:green">
                         </colgroup>
                         <tr>
@@ -122,15 +123,72 @@
                         </tr>
                      </table>
                   </section>
+                  <p> I also enjoy working on cars</p>
+                  <section id = "car_table">
+                     <caption>Car Ownership History</caption>
+                     <table>
+                        <colgroup>
+                           <col span="3" style="background-color:gray">
+                        </colgroup>
+                        <tr>
+                           <th>Year</th>
+                           <th>Make</th>
+                           <th>Model</th>
+                        </tr>
+                        <tr>
+                           <td>2016</td>
+                           <td>Honda</td>
+                           <td>Civic Si</td>
+                        </tr>
+                        <tr>
+                           <td>2012</td>
+                           <td>Nissan</td>
+                           <td>370z Nismo</td>
+                        </tr>
+                        <tr>
+                           <td>2009</td>
+                           <td>BMW</td>
+                           <td>M3</td>
+                        </tr>
+                        <tr>
+                           <td>2013</td>
+                           <td>BMW</td>
+                           <td>335is</td>
+                        </tr>
+                     </table>
+                  </section>
+               </details>
+               <hr />
+               <details>
+                  <summary style="font-size: 2vh"> <b> Contact Me </b> </summary>
+                  <section id = "contact_table">
+                     <caption>Contact Information</caption>
+                     <table>
+                        <colgroup>
+                           <col span="3" style="background-color:gray">
+                        </colgroup>
+                        <tr>
+                           <th>Email</th>
+                           <th>Phone #</th>
+                           <th>Instagram</th>
+                        </tr>
+                        <tr>
+                           <td>marcmendoza73@gmail.com</td>
+                           <td>(714)955-1156</td>
+                           <td>marcc.mendoza</td>
+                        </tr>
+                     </table>
+                  </section>
                </details>
             </div>
-            <div class="about-right-container">
-               <a href="https://github.com/MarcM710" class="fa fa-github" style="font-size:36px"></a>
-               <a href="https://www.linkedin.com/in/marc-mendoza-6b125322a/" class="fa fa-linkedin" style="font-size:36px"></a>
+            <div class="right-container">
+               <a href="https://www.instagram.com/marcc.mendoza/?next=%2F" class="fa fa-instagram" style="font-size:36px"></a>
+               <a href="images/snapcode.png" class="fa fa-snapchat-ghost" style="font-size:36px"></a>
+               <a href="https://on.soundcloud.com/QiBnU" class="fa fa-soundcloud" style="font-size:36px"></a>
             </div>
          </div>
       </main>
       <!-- Script used for responsive nav bar-->
-      <script src="navBar.js"></script>
+      <script src="scripts/navBar.js"></script>
    </body>
 </html>
