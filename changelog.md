@@ -11,3 +11,4 @@
 - Added script for Google Analytics tracking to main pages of portfolio which would allow tracking of Page views, scrolls, outbound clicks, site search, and any form of engagement such as forms, video interactions and file downloads. 
 - Added support which would allow me to track custom events or manage any incoming events or edit parameters for events if I wanted to in the future development of my site.
 - Created account for Algolia for this site and tried integrating, but didnt seem to work and ran out of time.
+- Included scripts that allow usage of Google Fonts and FontsAwesome Icons to style my page and use the icons to allow links to things such as my social media accounts, github account, linked in, resume, etc...
