@@ -1,7 +1,7 @@
 body {
-    background-color: #f3f3f3;
     margin: 0;
     padding: 0;
+    background-color: #9f9f9f;
 }
 
 header {
@@ -13,8 +13,8 @@ header {
 
 h1 {
     font-family: 'Shantell Sans', cursive;
-    font-size: 48px;
-    margin: 24px;
+    font-size: 4rem;
+    margin: 1.5rem;
 }
 
 main {
@@ -47,10 +47,20 @@ button {
 #blogTable td {
     font-family: 'Roboto Condensed', sans-serif;
     padding: 10px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+#blogTable td:nth-child(3) {
+    max-width: 30rem;
+}
+
+#blogTable tr:nth-child(odd) {
+    background-color: #f2f2f2;
 }
 
 #blogTable tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #35DCCC;
 }
 
 #blogTable tr:hover {
@@ -77,6 +87,8 @@ form textarea {
     width: 100%;
     height: 100px;
     resize: vertical;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 form button {
