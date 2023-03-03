@@ -66,7 +66,7 @@ details section p {
     margin: 0;
     font-family: "Teko", sans-serif;
     background-color: #818181;
-    background-image:  var(--about-page-img);
+    background-image:  var(--experience-page-img);
     background-size: cover;
     animation: fadeIn 3s;
 }
