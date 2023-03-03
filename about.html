@@ -13,6 +13,30 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@500&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script>
+         // script used to change background image in about me page (couldnt figure out fade in effect)
+         var backgroundImages = [
+            'url(/images/aboutMe/aboutMe.jpeg)',
+            'url(/images/aboutMe/aboutMe2.jpeg)',
+            'url(/images/aboutMe/aboutMe3.jpeg)',
+            'url(/images/aboutMe/aboutMe4.png)',
+            'url(/images/aboutMe/aboutMe5.jpeg)',
+            'url(/images/aboutMe/aboutMe6.jpeg)',
+            'url(/images/aboutMe/aboutMe7.jpeg)',
+            'url(/images/aboutMe/aboutMe8.jpeg)',
+            'url(/images/aboutMe/aboutMe9.jpeg)'
+
+         ];
+
+         function changeBackgroundImage() {
+            var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+            var body = document.getElementsByTagName("body")[0];
+            body.style.backgroundImage = backgroundImages[randomIndex];
+         }
+
+         // change image over interval of 5 sec
+         setInterval(changeBackgroundImage, 5000);
+      </script>
    </head>
    <body class="about-body">
       <span style="color:white; font-size:30px; cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
@@ -32,55 +56,65 @@
          <div class="grid-container">
             <div class="left-container">
                <details>
-                  <summary style="font-size: 2vh"> <b> Bio </b> </summary>
+                  <summary style="font-size: 2.5vh"> <b> Bio </b> </summary>
                   <p>
                      Hey there, my name Marc Mendoza. I am a 4th year Computer Science major at UC San Diego
                      who is currently working at a startup Fintech company called Ava Finance. I am currently working
                      solely on backend web development, however I plan on migrating towards working on the front end as well
-                     and eventually becoming a full stack web developer. I have an interest in cyber security and machine learning
-                     and hopefully have the opportunity to pursue that in the near future.
+                     and eventually becoming a full stack web developer. My faith in the success of the company keeps me at bay from
+                     pursuing another field. I have an interest in Cyber Security and Machine Learning and hopefully have the opportunity
+                     to pursue that in the near future by getting certifications and working on my own projects. I also hope the knowledge
+                     I gain from these courses/certifications could help me make the infrastructure of Ava a lot more secure and ultimately
+                     help the company hit big in the near future.
                   </p>
                   <p>
-                     On the other hand, I'm a devout car enthusiast and enjoy spending my free time working on cars. Maintenance,
-                     modifications, and the occasional trip to the racetrack either for drag racing or drifting. I'm also
-                     heavily invested into working out, more specifically into powerlifting. I'm also really into fashion/street wear
-                     and sneakers and probably spend a little more in this than I should.
+                     On the other hand, I'm a devout car enthusiast and enjoy spending my free time working on cars and constantly getting new cars.
+                     Maintenance, modifications, and the occasional trip to the racetrack either for drag racing or drifting (or mexico if you catch my drift).
+                     I'm also heavily invested into working out, more specifically into powerlifting and hope I can launch my official powerlifting career after graduation.
+                     I'm also really into fashion/street wear and sneakers and probably spend a little more in this than I should.
                   </p>
                   <p>
                      As far as other interests/goals I have, I'm deeply invested into beginning my own startup tech company soon
                      with a few of my friends related to the machine learning sector. Similarly, I also plan on investing intensively
                      into real estate and the stock market for the security of myself and my family, both in the present and future.
+                     I'm deeply invested in family values and hope that in the very-near future I can get my little sister through school,
+                     retire my parents, and set myself up for a fun and successful future. Considering the current state of the economy,
+                     ill probably hold off on the real estate and profit off the losses of big corporations because who doesn't enjoy that.
                   </p>
                </details>
                <hr />
                <details>
-                  <summary style="font-size: 2vh"> <b> Technical Skills </b> </summary>
+                  <summary style="font-size: 2.5vh"> <b> Technical Skills </b> </summary>
                   <ul>
-                     <li>Programming Languages</li>
+                     <p><b>Programming Languages</b> </p>
                      <ul>
                         <li>C / C++</li>
                         <li>Java</li>
                         <li>Kotlin</li>
                         <li>Python</li>
-                        <li>ARM Assembly</li>
                         <li>SQL</li>
-                        <li>Javascript</li>
+                        <li>HTML, CSS, & Javascript</li>
+                        <li>ARM & x86 Assembly</li>
                         <li>Bash/Shell</li>
                      </ul>
-                     <li>Software Tools</li>
+                     <hr />
+                     <p><b>Software Tools</b></p>
                      <ul>
                         <li>Github</li>
                         <li>VSCode</li>
+                        <li>Intellij, Pycharm, Datagrip, and Webstorm</li>
+                        <li>Docker</li>
                         <li>Jupyter</li>
                         <li>Android Studio</li>
                         <li>Quartus</li>
+                        <li>Postman</li>
                         <li>Microsoft Office Tools</li>
                      </ul>
                   </ul>
                </details>
                <hr />
                <details>
-                  <summary style="font-size: 2vh"> <b> Soft Skills </b> </summary>
+                  <summary style="font-size: 2.5vh"> <b> Soft Skills </b> </summary>
                   <ul>
                      <li>Adaptable</li>
                      <li>Time Management</li>
@@ -92,10 +126,10 @@
                </details>
                <hr />
                <details>
-                  <summary style="font-size: 2vh"> <b> Hobbies </b> </summary>
-                  <p> On my free time I enjoy powerlifting</p>
+                  <summary style="font-size: 2.5vh"> <b> Hobbies </b> </summary>
+                  <p><b> On my free time I enjoy powerlifting and constantly pushing myself to lift heavier (even at risk of throwing my back out)</b></p>
                   <section id = "pr_table">
-                     <caption>Powerlifting personal records by year</caption>
+                     <caption>Powerlifting personal records by year (lbs)</caption>
                      <table>
                         <colgroup>
                            <col span="1" style="background-color:red">
@@ -121,13 +155,14 @@
                         </tr>
                         <tr>
                            <td>2023</td>
-                           <td>475</td>
+                           <td>501</td>
                            <td>295</td>
                            <td>275</td>
                         </tr>
                      </table>
                   </section>
-                  <p> I also enjoy working on cars</p>
+                  <hr />
+                  <p><b> I also enjoy working on cars and switching up my rides</b> </p>
                   <section id = "car_table">
                      <caption>Car Ownership History</caption>
                      <table>
@@ -164,7 +199,7 @@
                </details>
                <hr />
                <details>
-                  <summary style="font-size: 2vh"> <b> Contact Me </b> </summary>
+                  <summary style="font-size: 2.5vh"> <b> Contact Me </b> </summary>
                   <section id = "contact_table">
                      <caption>Contact Information</caption>
                      <table>

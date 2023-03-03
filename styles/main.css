@@ -8,7 +8,7 @@
     --header-font: 2em 'Kanit', sans-serif;
     --fade-animation: fadeIn 2s;
     --home-page-img: url("/images/home.JPG") no-repeat center;
-    --about-page-img: url("/images/aboutMe.jpeg");
+    --about-page-img: url("/images/aboutMe/aboutMe.jpeg");
     --experience-page-img: url("/images/experience.jpeg");
 }
 
@@ -61,12 +61,10 @@ details section p {
 }
 
 /* About Me style */
-
-.about-body {
-    color: #FFF;
+.about-body,
+.experience-body{
     margin: 0;
     font-family: "Teko", sans-serif;
-    font-size: 20px;
     background-color: #818181;
     background-image:  var(--about-page-img);
     background-size: cover;
@@ -127,16 +125,6 @@ details section p {
 }
 
 /* ---- Experience Page Styling ---- */
-.experience-body {
-    color: #FFF;
-    margin: 0;
-    font: var(--body-font);
-    font-size: 20px;
-    background-color: #818181;
-    background-image: var(--experience-page-img);
-    background-size: cover;
-    animation: fadeIn 3s;
-}
 
 .experience-text {
     text-align: center;
@@ -146,19 +134,96 @@ details section p {
     transform: translate(-50%, -50%);
     font-family: 'Kanit', sans-serif;
     color: white;
-    font-size: 5rem;
+    font-size: 5em;
+}
+
+.experience-body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.left-container,
+.right-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-container {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.left-container details {
+    margin-bottom: 20px;
+}
+
+.left-container summary {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.left-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-container ul li {
+    margin: 10px 0;
+}
+
+.left-container a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.left-container a:hover {
+    text-decoration: underline;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-container a {
+    text-decoration: none;
+    margin: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.right-container a:hover {
+    transform: scale(1.2);
 }
 /* ---- Blog Styling ---- */
 
 .blog-body {
-    color: #FFF;
     margin: 0;
     font-family: var(--body-font);
     font-size: 20px;
-    background-color: #818181;
+    background-color: #4b0082;
+    color: #444444;
     background-size: cover;
     animation: fadeIn 3s;
     padding: 20px;
+}
+
+.blog-header {
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 .blog-text {
@@ -172,23 +237,18 @@ details section p {
     font-size: 4rem;
 }
 
-.blog-header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-}
-
 /* Left column */
 .blog-left {
     float: left;
     width: 75%;
+    font-family: 'Kanit', sans-serif;
 }
 
 .blog-right {
     float: left;
     width: 25%;
     padding-left: 20px;
+    font-family: 'Kanit', sans-serif;
 }
 
 .blog-img-one {
@@ -198,17 +258,35 @@ details section p {
 }
 
 .blog-post {
-    font: var(--body-font);
     background-color: white;
     color: black;
     padding: 20px;
     margin-top: 20px;
+    border-radius: 10px;
 }
+
+
+
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.blog-form {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4b0082;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
@@ -219,6 +297,7 @@ footer {
     font: var(--body-font);
     color: black;
 }
+
 /* -------- Icon Styling ------------ */
 .fa {
     padding: 20px;
@@ -273,6 +352,12 @@ footer {
     color: white;
     grid-column-end: span 2;
 }
+
+.fa-file-pdf-o {
+    background: #4b0082;
+    color: white;
+    grid-column-end: span 2;
+}
 /* ------------------------------------------ */
 
 .side_bar {
@@ -287,6 +372,10 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 5rem;
+    display: none;
+}
+body.nav-open .side_bar {
+    display: block;
 }
 
 .side_bar a {
@@ -314,6 +403,17 @@ footer {
     font-size: 2.25rem;
     margin-left: 1.5em;
 }
+
+#nav-icon {
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    #nav-icon {
+        display: none;
+    }
+}
+
 
 .fa {
     padding: 1em;
