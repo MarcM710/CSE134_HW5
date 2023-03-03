@@ -9,6 +9,7 @@
 - Updated styling on blog page
 - Added links to parts 1-4 of HW4 on my navigation bar, and added navigation bars to each of those pages to navigate back to other pages if needed
 - Added script for Google Analytics tracking to main pages of portfolio which would allow tracking of Page views, scrolls, outbound clicks, site search, and any form of engagement such as forms, video interactions and file downloads. 
-- Added support which would allow me to track custom events or manage any incoming events or edit parameters for events if I wanted to in the future development of my site.
+  - Doing so will allow me to see which pages are more engaging which would allow me to update the less engaging pages to create a better overall experience for recruiters or anybody else visiting
+  - Added support which would allow me to track custom events or manage any incoming events or edit parameters for events if I wanted to in the future development of my site.
 - Created account for Algolia for this site and tried integrating, but didnt seem to work and ran out of time.
 - Included scripts that allow usage of Google Fonts and FontsAwesome Icons to style my page and use the icons to allow links to things such as my social media accounts, github account, linked in, resume, etc...
