@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTTP Methods Page</title>
+    <link rel="stylesheet" type="text/css" href="methodtest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Shantell+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Teko:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHS872VTQ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QHS872VTQ8');
+  </script>
+  <!--------------------------------->
+  <body>
+    <h1>HTTP Methods Page</h1>
+    <span style="color:black; cursor:pointer" onclick="openNav()">&#9776; Navigation</span> <br />
+    <form id="article_form">
+      <label for="article_id">Article ID</label>
+      <input type="number" id="article_id" name="article_id" required><br><br>
+
+      <label for="article_name">Article Name</label>
+      <input type="text" id="article_name" name="article_name" required><br><br>
+
+      <label for="article_body">Article Body</label>
+      <textarea id="article_body" name="article_body" required></textarea><br><br>
+
+      <label for="article_date">Today's Date and Time</label>
+      <input type="text" id="article_date" name="article_date" readonly><br><br>
+
+      <button type="button" id="postButton">POST</button>
+      <button type="button" id="getButton">GET</button>
+      <button type="button" id="putButton">PUT</button>
+      <button type="button" id="deleteButton">DELETE</button>
+    </form>
+
+    <output id="response"></output>
+
+    <div id="mySideBar" class="side_bar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About Me</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../blog.html">Blog</a>
+      <a class="active" href="/Part1/methodtest.html">HTML Methods</a>
+    </div>
+    <!-- Script used for responsive nav bar-->
+    <script src="../scripts/navBar.js"></script>
+    <!-- Script used for functionality of form-->
+    <script type="module">
+      import { initializeHttpFile } from "./methodtest.js";
+      initializeHttpFile();
+    </script>
+  </body>
+</html>
