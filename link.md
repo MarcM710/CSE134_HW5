@@ -1,15 +1,11 @@
 # Links
 
-## Github: https://github.com/MarcM710/CSE134_HW4
+## Github: https://github.com/MarcM710/CSE134_HW5
 
-All pages (from my own portfolio + added files are able to be accessed through my navigation Bar)
+All pages (from my own portfolio + added files are able to be accessed through my navigation bar on the side)
 
-## Landing Page: https://taupe-peony-826a78.netlify.app/
+## Landing Page: https://strong-madeleine-cb1423.netlify.app/
 
-## Part 1 Native Dialogs: https://taupe-peony-826a78.netlify.app/part1/nativedialogs
+## Part 1 HTTP Methods: https://strong-madeleine-cb1423.netlify.app/part1/methodtest
 
-## Part 2 Custom Dialogs: https://taupe-peony-826a78.netlify.app/part2/customdialog
-
-## Part 3 CRUD: https://taupe-peony-826a78.netlify.app/part3/crud
-
-## Part 4 Styled CRUD: https://taupe-peony-826a78.netlify.app/part4/styledcrud
+## Part 2 Web Component: https://strong-madeleine-cb1423.netlify.app/part2/webcomponent
