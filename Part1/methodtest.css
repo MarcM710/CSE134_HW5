@@ -17,6 +17,7 @@
 body {
     background-color: #8f9bb0;
     font: var(--body-font);
+    animation: var(--fade-animation);
     margin: 0;
     padding: 0;
 }
@@ -26,7 +27,7 @@ body > span {
 }
 
 h1 {
-    background-color: #b09d8f;
+    background-color: #4b0082;
     color: #fff;
     font: var(--header-font);
     margin: 0;
@@ -91,15 +92,8 @@ button:hover > :not(:hover) {
     max-width: 1400px;
     padding: 20px;
     white-space: pre-wrap;
-}
-
-.response pre {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
-    overflow: auto;
-    padding: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .response pre code {
@@ -108,8 +102,8 @@ button:hover > :not(:hover) {
 }
 
 .loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
     border-radius: 50%;
     width: 120px;
     height: 120px;

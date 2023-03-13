@@ -23,8 +23,8 @@
     <h1>HTTP Methods Page</h1>
     <span style="color:black; cursor:pointer" onclick="openNav()">&#9776; Navigation</span> <br />
     <form id="article_form">
-      <label for="article_id">Article ID</label>
-      <input type="number" id="article_id" name="article_id" required><br><br>
+      <label for="id">Article ID</label>
+      <input type="number" id="id" name="id" required><br><br>
 
       <label for="article_name">Article Name</label>
       <input type="text" id="article_name" name="article_name" required><br><br>
@@ -50,10 +50,11 @@
       <a href="../experience.html">Experience</a>
       <a href="../blog.html">Blog</a>
       <a class="active" href="/Part1/methodtest.html">HTML Methods</a>
+      <a href="../Part2/webcomponent.html">Web Component</a>
     </div>
-    <!-- Script used for responsive nav bar-->
+    <!-- Script used for responsive nav bar -->
     <script src="../scripts/navBar.js"></script>
-    <!-- Script used for functionality of form-->
+    <!-- Script used for functionality of form -->
     <script type="module">
       import { initializeHttpFile } from "./methodtest.js";
       initializeHttpFile();
